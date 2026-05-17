@@ -41,7 +41,4 @@ jobs:
 
     # 🔹 7. Terraform Apply
     - name: Terraform Apply
-      run: terraform apply -auto-approve
-
-    - name: Terraform Apply
       run: terraform destroy -auto-approve
