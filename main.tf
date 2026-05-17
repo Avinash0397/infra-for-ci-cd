@@ -155,7 +155,7 @@ module "ec2_web_server" {
   source            = "./modules/ec2_instance"
   name              = "avinash-app-instance"
   ami               = "ami-0388e3ada3d9812da" # Replace with a valid AMI ID
-  instance_type     = "t2.micro"
+  instance_type     = "c7i-flex.large"
   subnet_id         = module.public_subnet_01.subnet_id
   vpc_security_group_ids = [module.security_group.sg_id]
   key_name          = var.key_name
